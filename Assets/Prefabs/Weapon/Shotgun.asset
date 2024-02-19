@@ -16,5 +16,5 @@ MonoBehaviour:
   sprite: {fileID: 1772703093, guid: 0d5e657ee5a074e4baa53d5b248a01d2, type: 3}
   bulletForce: 12
   shotInterval: 0.7
-  damage: 17
+  damage: 25
   maxQuantity: 12

@@ -1,7 +1,5 @@
 using System.Collections;
-using UnityEditor.SceneManagement;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 public class EnemyController : MonoBehaviour
 {

@@ -12,14 +12,11 @@ public class PlayerManager : MonoBehaviour
     private int indexPlayer;
     private int indexWeapon;
 
-    private void Awake()
+    private void Start()
     {
         Instance = this;
         indexPlayer = FileReadWrite.Instance.player.selectPlayer;
         indexWeapon = FileReadWrite.Instance.player.idItemWeapon;
-    }
-    private void Start()
-    {
         SpawnPLayer();
     }
 
@@ -32,6 +29,7 @@ public class PlayerManager : MonoBehaviour
         {
             weapon.gameObject.transform.Find("Gun").gameObject.SetActive(false);
             weapon.gameObject.transform.Find("Melee-1").gameObject.SetActive(true);
+            weapon.itemWeapon = weapons[0];
             return;
         }
         weapon.itemWeapon = weapons[indexWeapon];
